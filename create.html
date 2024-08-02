@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>create an account</title>
+<style type="text/css">
+
+	body{
+			background-color: lightskyblue;
+			color: darkcyan;
+
+		}
+	h3{
+			font-size: 20px;
+			font-family: cursive;
+			}
+			form{
+				color: black;
+			}
+		input{
+			background-color: lightskyblue;
+			color: black;
+			border-radius: 5px;
+		}
+		div{
+			margin-left: 470px ;
+			margin-right: 470px;
+			background-color: whitesmoke;
+			opacity: .6;
+			border-radius: 10px;
+
+		}
+
+</style>
+</head>
+
+<center>
+	<br><br><br><h3>CREATE AN ACCOUNT</h3><br><br><br>
+	<div><br><br><br><br>
+	<form action="create.php" method="POST">
+		USERNAME:<input type="text" name="uname" required><br><br>
+		PASSWORD:<input type="password" name="pword" required><br><br>
+		DATE OF BIRTH:<input type="date" name="dob" required><br><br>
+		GENDER:<input type="radio" name="gender" value="female">FEMALE&nbsp;&nbsp;
+		<input type="radio" name="gender" value="female">MALE&nbsp;&nbsp;<input type="radio" name="gender" value="other">OTHER
+		<br><br>
+		EMAIL:<input type="email" name="mail" required><br><br>
+		PHONE NUMBER:<input type="tel" name="phno" pattern="^\d{10}$" required><br>
+<br>
+		<input type="submit" name="sub" value="CREATE">&nbsp;&nbsp;&nbsp;
+<a href="home.html">
+	<input type="button" name="btn" value="BACK"></a>
+	</form>	<br><br><br><br>
+</center>
+</div>
+</body>
+</html>
